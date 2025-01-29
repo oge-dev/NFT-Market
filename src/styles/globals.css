@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sora:wght@100..800&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Color Palette */
+:root {
+  --On-White-Dark-100: #060714;
+  --On-White-Grey-100: #7780a1;
+  --On-White-Dark-90: #262840;
+  --Rest-White: #fff;
+  --font-weight-600: 600;
+  --font-size-16: 16px;
+}
+html,
+body {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: var(--On-White-Dark-100, #060714);
+  color: var(--On-White-Grey-100, #7780a1);
+  position: relative;
+  z-index: 0; /* Keep body at base layer */
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--On-White-Grey-100, #7780a1);
+  text-decoration: none;
+}
+/* nft Header stying */
+.nft-header-section {
+  height: 555px;
+  max-width: 1920px;
+  width: 100%;
+  position: relative;
+}
+
+.nft-header-section::before {
+  content: "";
+  background: url("/Circles.png") no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+/* topbar section styling */
+.nft-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 117px;
+  flex-shrink: 0;
+}
+.nft-topbar-menu {
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+}
+.nft-topbar-menu a {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-600);
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.nft-topbar-btns {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+.nft-topbar-btns button {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-600);
+}
+.nft-topbar-btns button:nth-of-type(1) {
+  color: var(--On-White-Grey-100, #7780a1);
+  border-radius: 12px;
+  border: 2px solid var(--On-White-Dark-90, #262840);
+  box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+    4px 4px 4px 0px rgba(255, 255, 255, 0.1) inset;
+  background: none;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.nft-topbar-btns button:nth-of-type(2) {
+  border-radius: 12px;
+  background: linear-gradient(104deg, #4745d0 0%, #2a27c9 60.23%);
+  box-shadow: -4px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+    4px 4px 4px 0px rgba(255, 255, 255, 0.1) inset;
+  color: var(--Rest-White, #fff);
+  border: none;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
