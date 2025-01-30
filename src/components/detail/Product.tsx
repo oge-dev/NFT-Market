@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import unsplashImg from "../../assets/unsplash.png";
-import BrookSimAvatar from "../../assets/brookSim.png";
-import AfterlifeAvatar from "../../assets/afterlife.png";
+import BrookSimAvatar from "../../../public/brookSim.png";
+import AfterlifeAvatar from "../../../public/afterlife.png";
 import Image from "next/image";
 import BidHistoryChart from "./BidHistoryChart";
 
@@ -43,7 +43,6 @@ const Product = () => {
                 width={40}
                 height={40}
                 alt="Creator"
-                className="rounded-full"
               />
 
               <div>
@@ -58,7 +57,6 @@ const Product = () => {
                 width={40}
                 height={40}
                 alt="Creator"
-                className="rounded-full"
               />
 
               <div>
