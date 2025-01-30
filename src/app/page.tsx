@@ -1,9 +1,12 @@
-import React from 'react'
+import Header from '@/components/listingPage/Header';
+import React from 'react';
 
 const ListingPage = () => {
   return (
-    <div>Listing Page</div>
-  )
-}
+    <div className="listing-page">
+      <Header />
+    </div>
+  );
+};
 
-export default ListingPage
+export default ListingPage;
