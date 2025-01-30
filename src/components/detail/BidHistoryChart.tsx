@@ -7,6 +7,11 @@ type BidDataPoint = {
   value: number;
 };
 
+type CustomTooltipProps = {
+  active?: boolean;
+  payload?: { value: number }[];
+};
+
 const BidHistoryChart = () => {
   // Sample data - you can replace this with real data
   const data: BidDataPoint[] = [
@@ -17,7 +22,7 @@ const BidHistoryChart = () => {
     { time: '16:00', value: 2.55 },
   ];
 
-  const CustomTooltip = ({ active, payload }: any) => {
+  const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
     if (active && payload && payload.length) {
       return (
         <div className="bg-gray-700 text-white px-3 py-2 rounded-lg shadow-lg">
