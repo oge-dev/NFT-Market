@@ -9,3 +9,7 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+ to view detail page: Open [http://localhost:3000/1](http://localhost:3000/1) 
+
+live url: [nft-market](https://nft-market-eta-ruby.vercel.app/)

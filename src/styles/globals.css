@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
 /* Reset */
 * {
   margin: 0;
@@ -12,6 +12,7 @@
   --On-White-Grey-100: #7780a1;
   --On-White-Dark-90: #262840;
   --Rest-White: #fff;
+  --font-weight-400: 400;
   --font-weight-600: 600;
   --font-size-16: 16px;
 }
@@ -117,8 +118,50 @@ a {
   line-height: normal;
   letter-spacing: 0.2px;
 }
-/* center text at header section */
-.nftText{
+/* center nftText at header section */
+.nftText {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.search-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-select-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 6rem;
+  width: 643px;
+  height: 84px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Rest-White, #fff);
+  box-shadow: 0px 25px 75px 0px rgba(6, 7, 20, 0.1);
+}
+.search,
+select {
+  flex-grow: 1;
+  font-size: var(--font-size-16);
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  border-radius: 16px;
+  color: var(--On-White-Dark-90, #262840);
+  font-family: "Inter", serif;
+  font-weight: var(--font-weight-400);
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.2px;
+}
+/* logo types brands styling */
+.logotypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 110px;
 }
