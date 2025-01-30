@@ -4,10 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import nftLogo from "../../assets/Logo.png";
 import nftText from "../../assets/Text.png";
-import RitterSport from "../../assets/RitterSport.png";
-import Nike from "../../assets/Nike.png";
-import Addidas from "../../assets/addidas.png";
-import NewHolland from "../../assets/NewHolland.png";
 
 // header component at listing page
 const Header = () => {
@@ -49,26 +45,20 @@ const Header = () => {
         />
       </div>
       <div className="search-select">
-      <div className="search-select-content">
-        <input
-          type="search"
-          className="search"
-          placeholder="Items, collections and creators"
-          aria-label="Search"
-        />
-        <select
-          className=""
-          aria-label="Filter options"
-        >
-          <option value="">Categories</option>
-          <option value="products">Products</option>
-          <option value="brands">Brands</option>
-        </select>
+        <div className="search-select-content">
+          <input
+            type="search"
+            className="search"
+            placeholder="Items, collections and creators"
+            aria-label="Search"
+          />
+          <select className="" aria-label="Filter options">
+            <option value="">Categories</option>
+            <option value="products">Products</option>
+            <option value="brands">Brands</option>
+          </select>
+        </div>
       </div>
-      </div>
-     
-
-     
     </section>
   );
 };

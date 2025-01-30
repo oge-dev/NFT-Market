@@ -1,8 +1,5 @@
-import React from 'react'
+import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import nftLogo from "../../assets/Logo.png";
-import nftText from "../../assets/Text.png";
 import RitterSport from "../../assets/RitterSport.png";
 import Nike from "../../assets/Nike.png";
 import Addidas from "../../assets/addidas.png";
@@ -11,36 +8,36 @@ import NewHolland from "../../assets/NewHolland.png";
 const Logotypes = () => {
   return (
     <div className="logotypes">
-    <Image
-      src={RitterSport}
-      width={85}
-      height={45}
-      priority={false}
-      alt="nftTextImg"
-    />
-    <Image
-      src={Nike}
-      width={85}
-      height={45}
-      priority={false}
-      alt="nftTextImg"
-    />
-    <Image
-      src={Addidas}
-      width={85}
-      height={45}
-      priority={false}
-      alt="nftTextImg"
-    />
-    <Image
-      src={NewHolland}
-      width={85}
-      height={45}
-      priority={false}
-      alt="nftTextImg"
-    />
-  </div>
-  )
-}
+      <Image
+        src={RitterSport}
+        width={85}
+        height={45}
+        priority={false}
+        alt="nftTextImg"
+      />
+      <Image
+        src={Nike}
+        width={85}
+        height={45}
+        priority={false}
+        alt="nftTextImg"
+      />
+      <Image
+        src={Addidas}
+        width={85}
+        height={45}
+        priority={false}
+        alt="nftTextImg"
+      />
+      <Image
+        src={NewHolland}
+        width={85}
+        height={45}
+        priority={false}
+        alt="nftTextImg"
+      />
+    </div>
+  );
+};
 
-export default Logotypes
+export default Logotypes;
