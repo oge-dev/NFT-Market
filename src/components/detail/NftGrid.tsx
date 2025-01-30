@@ -31,6 +31,22 @@ const initialNFTs: NFTItem[] = [
     bidders: 101,
     liked: false,
   },
+  {
+    id: 3,
+    name: "Faucibus habitasse at et platea massa mauris",
+    image: unsplashGridImg.src,
+    price: 2.55,
+    bidders: 101,
+    liked: false,
+  },
+  {
+    id: 4,
+    name: "Diam purus sagittis nisl erat mauris",
+    image: unsplashGridImg1.src,
+    price: 2.55,
+    bidders: 101,
+    liked: false,
+  },
   // Add other items as necessary
 ];
 

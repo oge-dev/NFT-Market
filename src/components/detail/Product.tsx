@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import unsplashImg from "../../assets/unsplash.png";
-import BrookSimAvatar from "../../assets/Ellipse.png";
-import AfterlifeAvatar from "../../assets/Ellipse1.png";
+import BrookSimAvatar from "../../assets/brookSim.png";
+import AfterlifeAvatar from "../../assets/afterlife.png";
 import Image from "next/image";
 import BidHistoryChart from "./BidHistoryChart";
 
