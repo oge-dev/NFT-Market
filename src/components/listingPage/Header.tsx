@@ -48,37 +48,27 @@ const Header = () => {
           alt="nftTextImg"
         />
       </div>
-      <div className="search">search</div>
-      <div className="brands">
-        <Image
-          src={RitterSport}
-          width={85}
-          height={45}
-          priority={false}
-          alt="nftTextImg"
+      <div className="search-select">
+      <div className="search-select-content">
+        <input
+          type="search"
+          className="search"
+          placeholder="Items, collections and creators"
+          aria-label="Search"
         />
-         <Image
-          src={Nike}
-          width={85}
-          height={45}
-          priority={false}
-          alt="nftTextImg"
-        />
-         <Image
-          src={Addidas}
-          width={85}
-          height={45}
-          priority={false}
-          alt="nftTextImg"
-        />
-         <Image
-          src={NewHolland}
-          width={85}
-          height={45}
-          priority={false}
-          alt="nftTextImg"
-        />
+        <select
+          className=""
+          aria-label="Filter options"
+        >
+          <option value="">Categories</option>
+          <option value="products">Products</option>
+          <option value="brands">Brands</option>
+        </select>
       </div>
+      </div>
+     
+
+     
     </section>
   );
 };
