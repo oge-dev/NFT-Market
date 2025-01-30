@@ -1,7 +1,5 @@
 "use client";
-
 import React from "react";
-
 import Image from "next/image";
 import heartbg from "../../assets/heart-icon.svg";
 import heartbrd from "../../assets/heart-brd.svg";

@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import NFTCard from "../detail/NftCard";
 
+import unsplashGridImg from "../../assets/unsplash_TVQFl9R-MLQ.png";
+import unsplashGridImg1 from "../../assets/unsplash_z7pnyucFR5s.png";
+
 interface NFTItem {
   id: number;
   name: string;
@@ -15,7 +18,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 1,
     name: "Faucibus habitasse at et platea massa mauris",
-    image: "/public/images/unsplash_5NE6mX0WVfQ.svg",
+    image: unsplashGridImg.src,
     price: 2.55,
     bidders: 101,
     liked: false,
@@ -23,7 +26,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 2,
     name: "Diam purus sagittis nisl erat mauris",
-    image: "/api/placeholder/400/500",
+    image: unsplashGridImg1.src,
     price: 2.55,
     bidders: 101,
     liked: false,
@@ -58,10 +61,10 @@ const NFTGrid: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col mx-auto justify-center item-center">
+    <div className="flex flex-col mx-auto justify-center item-center mt-20">
       <div className="mx-auto text-center mb-10">
         <span>OVERLINE</span>
-        <h2>More from this author</h2>
+        <h2 className="text-[#fff] text-[32px]">More from this author</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {nfts.map((nft) => (

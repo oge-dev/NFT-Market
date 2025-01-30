@@ -29,8 +29,8 @@ const BidHistoryChart = () => {
   };
 
   return (
-    <div className="w-full h-64 bg-white rounded-lg p-4">
-      <div className="text-gray-600 text-sm mb-4">
+    <div className="w-full h-64 bg-transparent rounded-lg p-4">
+      <div className="text-gray-600 text-[14px] font-[400] mb-4">
         History of bids (12 people are bidding)
       </div>
       <ResponsiveContainer width="100%" height="100%">
