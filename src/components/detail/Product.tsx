@@ -8,7 +8,7 @@ import BidHistoryChart from "./BidHistoryChart";
 
 const Product = () => {
   return (
-    <section className=" flex justify-center w- items-center min-h-screen px-20">
+    <section className="mt-48 flex justify-center w- items-center min-h-screen px-20">
       <article className="relative flex item-center flex-wrap md:flex-nowrap justify-center max-w-[950px] w-full rounded-[20px] p-4 gap-5 border border-[#262840] ">
         <div className="left hidden md:block">
           <Image

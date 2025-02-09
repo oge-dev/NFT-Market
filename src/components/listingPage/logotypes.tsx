@@ -7,7 +7,7 @@ import NewHolland from "../../assets/NewHolland.png";
 
 const Logotypes = () => {
   return (
-    <div className="logotypes">
+    <div className="flex justify-center items-center mt-20 gap-[110px]">
       <Image
         src={RitterSport}
         width={85}
