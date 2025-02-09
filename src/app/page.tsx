@@ -1,12 +1,12 @@
-import Header from '@/components/listingPage/Header';
+import React from 'react';
 import LiveAuction from '@/components/listingPage/liveAuction';
 import Logotypes from '@/components/listingPage/logotypes';
-import React from 'react';
+import HeroSection from '@/components/listingPage/heroSection';
 
 const ListingPage = () => {
   return (
     <div className="listing-page">
-      <Header />
+      <HeroSection/>
       {/* logo types brands */}
       <Logotypes/>
       {/* Live Auction */}
