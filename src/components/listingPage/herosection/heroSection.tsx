@@ -1,11 +1,11 @@
 import React from "react";
-import nftText from "../../assets/Text.png";
+import nftText from "../../../assets/Text.png";
 import Image from "next/image";
 import Logotypes from "./logotypes";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[url('/Background.png')] bg-cover bg-center relative">
+    <div className="min-h-screen flex flex-col items-center bg-[url('/Background.png')] z-[-1] bg-cover bg-center relative">
       <div className="absolute bg-[url('/Squares.png')] bg-contain bottom-0 inset-x-0 z-[-2] h-[655px] pointer-events-none"></div>
       <div className="mt-48">
         <Image

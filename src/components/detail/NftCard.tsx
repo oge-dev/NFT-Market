@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 import heartbg from "../../assets/heart-icon.svg";
 import heartbrd from "../../assets/heart-brd.svg";
 
 interface NFTItemProps {
   id: number;
   name: string;
-  image: string;
+  image: StaticImageData;
   price: number;
   bidders: number;
   liked: boolean;

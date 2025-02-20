@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import NFTCard from "../detail/NftCard";
-
+import { StaticImageData } from "next/image";
 import unsplashGridImg from "../../assets/unsplash_TVQFl9R-MLQ.png";
 import unsplashGridImg1 from "../../assets/unsplash_z7pnyucFR5s.png";
 
 interface NFTItem {
   id: number;
   name: string;
-  image: string;
+  image: StaticImageData;
   price: number;
   bidders: number;
   liked: boolean;
@@ -18,7 +18,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 1,
     name: "Faucibus habitasse at et platea massa mauris",
-    image: unsplashGridImg.src,
+    image: unsplashGridImg,
     price: 2.55,
     bidders: 101,
     liked: false,
@@ -26,7 +26,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 2,
     name: "Diam purus sagittis nisl erat mauris",
-    image: unsplashGridImg1.src,
+    image: unsplashGridImg1,
     price: 2.55,
     bidders: 101,
     liked: false,
@@ -34,7 +34,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 3,
     name: "Faucibus habitasse at et platea massa mauris",
-    image: unsplashGridImg.src,
+    image: unsplashGridImg,
     price: 2.55,
     bidders: 101,
     liked: false,
@@ -42,7 +42,7 @@ const initialNFTs: NFTItem[] = [
   {
     id: 4,
     name: "Diam purus sagittis nisl erat mauris",
-    image: unsplashGridImg1.src,
+    image: unsplashGridImg1,
     price: 2.55,
     bidders: 101,
     liked: false,
