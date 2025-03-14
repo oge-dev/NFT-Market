@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import RitterSport from "../../assets/RitterSport.png";
-import Nike from "../../assets/Nike.png";
-import Addidas from "../../assets/addidas.png";
-import NewHolland from "../../assets/NewHolland.png";
+import RitterSport from "../../../assets/RitterSport.png";
+import Nike from "../../../assets/Nike.png";
+import Addidas from "../../../assets/addidas.png";
+import NewHolland from "../../../assets/NewHolland.png";
 
 const Logotypes = () => {
   return (
