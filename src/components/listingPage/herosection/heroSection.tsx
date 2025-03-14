@@ -5,8 +5,8 @@ import Logotypes from "./logotypes";
 
 const HeroSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center bg-[url('/Background.png')] z-[-1] bg-cover bg-center relative">
-      <div className="absolute bg-[url('/Squares.png')] bg-contain bottom-0 inset-x-0 z-[-2] h-[655px] pointer-events-none"></div>
+    <div className="min-h-screen flex flex-col items-center bg-[url('/Background.png')] z-[-1] bg-cover bg-center bg-no-repeat relative">
+      <div className="absolute bg-[url('/Squares.png')] bg-contain bg-no-repeat bottom-0 inset-x-0 z-[-2] h-[655px] pointer-events-none"></div>
       <div className="mt-48">
         <Image
           src={nftText}

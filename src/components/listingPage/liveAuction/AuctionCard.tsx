@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import TimerIcon from "../../../assets/TimerIcon.png";
-import HeartIcon from "../../../assets/heartIcon.png"
+import HeartIcon from "../../../assets/heartIcon.png";
 
 interface AuctionCardProps {
   id: number;
@@ -25,22 +25,21 @@ const AuctionCard: React.FC<AuctionCardProps> = ({
   likes,
 }) => {
   return (
-    <div className="w-[448px] h-[767px] rounded-[20px] border border-on-white-dark-90 p-6">
+    <div className="rounded-xl border border-on-white-dark-90 p-4">
       <Image
         src={image}
         alt={title}
-        width={400}
-        height={520}
-        className="rounded-xl object-cover"
+        className="w-full h-82 object-cover rounded-lg"
       />
-      <div className="flex justify-between items-center mt-6 mb-6">
-        <h6 className="text-rest-white text-custom-20 font-custom-600 tracking-[0.2px] w-[276px]">
+      <div className="flex justify-between items-center my-6">
+        <h6 className="text-rest-white text-custom-20 font-custom-600 mt-3">
           {title}
         </h6>
         <button className="text-primary-purple-light-100 text-custom-16 tracking-[0.2px] bg-primary-purple-light-100/15 inline-flex items-center justify-end gap-2.5 rounded px-3.5 py-2">
           {price} ETH
         </button>
       </div>
+
       <div className="flex items-center">
         <Image
           src={TimerIcon}
@@ -49,9 +48,11 @@ const AuctionCard: React.FC<AuctionCardProps> = ({
           height={20}
           className="mr-2"
         />
-        <p className="text-rest-white font-inter font-custom-400 text-custom-14 leading-[150%] tracking-[0.2px]">{timeLeft} min left</p>
+        <p className="text-rest-white font-inter font-custom-400 text-custom-14 leading-[150%] tracking-[0.2px]">
+          {timeLeft} min left
+        </p>
       </div>
-      <div className="w-[400px] h-[1px] bg-[#262840] mt-7 mb-5"></div>
+      <div className="w-full h-[1px] bg-[#262840] mt-7 mb-5"></div>
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           {bidders.slice(0, 4).map((bidder, index) => (
@@ -70,11 +71,7 @@ const AuctionCard: React.FC<AuctionCardProps> = ({
         </div>
 
         <div className="flex items-center">
-        <Image src={HeartIcon}
-              alt="Heart Icon"
-              width={20}
-              height={20}
-            />
+          <Image src={HeartIcon} alt="Heart Icon" width={20} height={20} />
           <span className="text-on-white-grey-100 font-inter font-custom-400 text-custom-14 leading-[150%] tracking-[0.2px]">
             {likes}
           </span>
